@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="maaincontainer">
+      <div class="container-left" id="container5">
+        <h1 class="label">Sample Form</h1>
+        <form class="formc">
+          <div class="form">
+            <div class="inputfield" id="fname">
+              <label>First Name:</label>
+              <input
+                type="text"
+                id="txtInput"
+                class="input"
+                placeholder="Enter your first Name"
+                required
+              /> <br>
+              <span id="fname" class="text-danger"></span>
+            </div>
+
+            <div class="inputfield" >
+              <label>Last Name:</label>
+              <input
+                type="text"
+                id="txtInput1"
+                class="input"
+                placeholder="Enter your last Name"
+                required
+              />
+              <span id="fname" class="text-danger"></span>
+            </div>
+
+            <div class="inputfield">
+              <label>Email ID:</label>
+              <input
+                type="text"
+                id="txtInput2"
+                class="input"
+                placeholder="Enter your Email"
+                required
+              />
+              <span id="fname" class="text-danger"></span>
+            </div>
+
+            Select Country:
+            <select
+              class="inputfield"
+              name="countrya"
+              id="input"
+              onchange="load()"
+            >
+              <option value="" selected="selected">--Choose Country--</option>
+            </select>
+            <br />
+            Select State:
+            <select
+              class="inputfield"
+              name="state"
+              id="input1"
+              onchange="load()"
+            >
+              <option value="" selected="selected">
+                --Please select Country first--
+              </option>
+            </select>
+            <br />
+            Select City:
+            <select class="inputfield" name="district" id="input2">
+              <option value="" selected="selected">
+                --Please select State first--
+              </option>
+            </select>
+
+            <div class="btnSubmit">
+              <button type="button" onclick="load()">Submit</button>
+            </div>
+          </div>
+       
+      </div>
+
+      <div id="container5">
+        <h1 class="label">Output Table</h1>
+        <table id="table" border="2"> 
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>District</th>
+          </tr>
+        </table>
+      </div>
+    </form>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

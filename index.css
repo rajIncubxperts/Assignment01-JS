@@ -1,0 +1,66 @@
+body {
+  /* background-color: aquamarine; */
+  margin: 0;
+  padding: 0;
+}
+
+.maaincontainer {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgb(17, 17, 17);
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+label{
+  font-weight: bold;
+}
+input{
+  width: 50%;
+  height: 35px;
+  border-radius: 10px;
+  border: 0;
+  
+}
+
+
+.inputfield {
+  margin-bottom: 20px;
+
+  
+}
+.title {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container-left {
+}
+
+#container5 {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid red;
+  margin: 20px;
+}
+
+.form {
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px, solid, gray;
+  text-align: center;
+  padding: 5px;
+}
+
+.text-danger {
+  color: red;
+  font-weight: bolder;
+}
+
