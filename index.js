@@ -1,28 +1,33 @@
 //Add Rows
 const load = () => {
-    var table = document.getElementById('table'),
-      newRow = table.insertRow(table.length),
-      cell1 = newRow.insertCell(0),
-      cell2 = newRow.insertCell(1),
-      cell3 = newRow.insertCell(2),
-      cell4 = newRow.insertCell(3),
-      cell5 = newRow.insertCell(4),
-      cell6 = newRow.insertCell(5),
-      input = document.getElementById('txtInput').value
+
+
+    input = document.getElementById('txtInput').value
     txtInput1 = document.getElementById('txtInput1').value
     txtInput2 = document.getElementById('txtInput2').value
 
     txtInput3 = document.getElementById('input').value
     txtInput4 = document.getElementById('input1').value
     txtInput5 = document.getElementById('input2').value
+  if(input = ''){
 
-    cell1.innerHTML = input
+    var table = document.getElementById('table'),
+    newRow = table.insertRow(table.length),
+    cell1 = newRow.insertCell(0),
+    cell2 = newRow.insertCell(1),
+    cell3 = newRow.insertCell(2),
+    cell4 = newRow.insertCell(3),
+    cell5 = newRow.insertCell(4),
+    cell6 = newRow.insertCell(5)
+
     cell2.innerHTML = txtInput1
     cell3.innerHTML = txtInput2
     cell4.innerHTML = txtInput3
     cell5.innerHTML = txtInput4
     cell6.innerHTML = txtInput5
 
+  }
+  
   }
 
   var stateObject = {
